@@ -1,0 +1,24 @@
+{
+  "name": "align",
+  "version": "1.0.0",
+  "description": "website for Align Scoliosis Physical Therapy",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lromeo/align.git"
+  },
+  "author": "Luke Romeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lromeo/align/issues"
+  },
+  "homepage": "https://github.com/lromeo/align#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
