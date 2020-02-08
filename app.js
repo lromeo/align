@@ -20,6 +20,10 @@ app.get("/about", function(req, res){
   res.render("about")
 })
 
+app.get("/schroth", function(req, res){
+  res.render("schroth")
+})
+
 app.get("/contact", function(req, res){
   res.render("contact")
 })
