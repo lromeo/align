@@ -10,16 +10,18 @@ body {
 .navbar {
   padding: 0;
 }
-/* .nav-link {
-  color: #60b0f4;
-} */
+
+.certs {
+  color: #8CCCBA ;
+  /* font-size: smaller; */
+}
 
 .logo {
   text-align: center;
 }
 
 .logo span {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 .logo-footer {
@@ -34,17 +36,52 @@ body {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 0;
   font-size: 3.25em;
+  color: #292F36;
 }
 
 .logo-line-2 {
   font-family: 'Spinnaker', sans-serif;
   font-size: 1.5em;
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
+.testimonial-carousel .carousel-item {
+  background-color: white;
+}
+.testimonial-carousel .carousel-item img {
+  max-height: 800px;
+}
+
+.carousel-control-next-icon {
+  background-image: '';
+}
+
+.testimonial {
+  /* margin-right: 4rem; */
+  /* margin-left: 4rem; */
+  /* max-width: 550px; */
+  text-align: center;
+  font-size: larger;
+}
+
+.testimonial-author {
+  margin-bottom: 15px;
+}
+
+.testimonial-author-sm {
+  font-size: smaller;
+}
+
+.testimonial-author-lg {
+  font-size: larger;
+}
+
+.testimonial-quote {
+  margin-bottom: 0;
+}
 
 .btn {
-  background: #90ccbf;
+  background: #8CCCBA ;
 }
 .blrub {
   height: 5rem;
@@ -67,63 +104,86 @@ body {
 }
 
 strong {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 .contact-link {
   font-size: larger;
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 p {
   color: #292F36;
 }
 
-.theme-color-dark {
-  color: #292F36;
+
+.theme-color-text {
+  color: #8CCCBA ;
 }
 
 .theme-color-light {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 i.far {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 i {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 .blurb-title {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 h2 {
   font-weight: 300;
-   color: #90ccbf;
+   color: #8CCCBA ;
+}
+
+.services h1 {
+  font-size: 2rem;
+}
+
+.services h2 {
+  font-size: 1.45rem;
 }
 
 h1 {
   font-weight: 300;
-  color: #292F36;
+  color: #8CCCBA;
+  text-align: center;
 }
 
 .schroth-row {
   margin-bottom: 1.5rem;
-  padding-right: 15px;
-  padding-left: 15px;
+}
+
+.intensive-schedule p {
+  margin-bottom: 0;
+  text-indent: 1em;
 }
 
 .lead {
   text-align: justify;
 }
 
+.about-img {
+  max-width: 275px;
+  margin: 15px;
+}
 
-/* Modify the backgorund color */
-/* a .navbar-link {
-    color: green;
-} */
+.testimonial-pictures-blurb {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.carousel-testimonial {
+  margin-top: 2rem;
+}
+
 .navbar {
   background-color: #f4f4f4;
 }
@@ -132,17 +192,17 @@ h1 {
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 .navbar .navbar-text {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 .navbar .navbar-text a {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 .navbar .navbar-text a:hover,
 .navbar .navbar-text a:focus {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 .navbar .navbar-nav .nav-link {
   color: #787b7f;
@@ -151,7 +211,7 @@ h1 {
 }
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item.active .nav-link:hover,
@@ -159,7 +219,7 @@ h1 {
 .navbar .navbar-nav .nav-item.show .nav-link,
 .navbar .navbar-nav .nav-item.show .nav-link:hover,
 .navbar .navbar-nav .nav-item.show .nav-link:focus {
-  color: #90ccbf;
+  color: #8CCCBA ;
   background-color: #060505;
 }
 .navbar .navbar-toggle {
@@ -180,11 +240,11 @@ h1 {
   color: #292f36;
 }
 .navbar .navbar-link:hover {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 
 .navbar-toggler-icon {
-  color: #90ccbf;
+  color: #8CCCBA ;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(144, 204, 191)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
@@ -194,10 +254,10 @@ h1 {
   }
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #90ccbf;
+    color: #8CCCBA ;
   }
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #90ccbf;
+    color: #8CCCBA ;
     background-color: #060505;
   }
 }
@@ -208,10 +268,10 @@ h1 {
   }
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #90ccbf;
+    color: #8CCCBA ;
   }
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #90ccbf;
+    color: #8CCCBA ;
     background-color: #060505;
   }
 }
@@ -222,10 +282,10 @@ h1 {
   }
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #90ccbf;
+    color: #8CCCBA ;
   }
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #90ccbf;
+    color: #8CCCBA ;
     background-color: #060505;
   }
 }
@@ -236,10 +296,10 @@ h1 {
   }
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #90ccbf;
+    color: #8CCCBA ;
   }
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #90ccbf;
+    color: #8CCCBA ;
     background-color: #060505;
   }
 }
@@ -249,10 +309,10 @@ h1 {
 }
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-  color: #90ccbf;
+  color: #8CCCBA ;
 }
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
-  color: #90ccbf;
+  color: #8CCCBA ;
   background-color: #060505;
 }
 /* CUSTOMIZE THE CAROUSEL
@@ -266,7 +326,7 @@ h1 {
 .carousel-caption {
   bottom: 2rem;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.4)
+  background: rgba(0, 0, 0, 0.3)
 }
 
 /* Declare heights because of positioning of img element */
@@ -292,10 +352,6 @@ h1 {
   margin-left: .75rem;
 }
 
-
-/* Featurettes
-
-/* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -319,8 +375,8 @@ h1 {
   }
 }
 
-@media (min-width: 62em) {
+/* @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
-}
+} */

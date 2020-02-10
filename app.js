@@ -28,6 +28,14 @@ app.get("/contact", function(req, res){
   res.render("contact")
 })
 
+app.get("/testimonials", function(req, res){
+  res.render("testimonials")
+})
+
+app.get("/services", function(req, res){
+  res.render("services")
+})
+
 const GMAIL_USER = process.env.GMAIL_USER
 const GMAIL_PASS = process.env.GMAIL_PASS
 const EMAIL_RECIPIENT = process.env.EMAIL_RECIPIENT
