@@ -81,8 +81,14 @@ body {
 }
 
 .btn {
-  background: #8CCCBA ;
+  background: #8CCCBA;
+  border: none;
 }
+
+.btn:hover {
+  background:#108e6a;
+}
+
 .blrub {
   height: 5rem;
   color: #292F36;
@@ -182,6 +188,10 @@ h1 {
 
 .carousel-testimonial {
   margin-top: 2rem;
+}
+
+.featurette-divider {
+  margin-bottom: 2rem;
 }
 
 .navbar {
