@@ -7,13 +7,30 @@ body {
   padding-bottom: 3rem;
 }
 
+#map {
+  margin-top: 1rem;
+  height: 400px;
+}
+
+#about-align-scoliosis {
+  font-size: 2rem;
+  display: inline;
+}
+
+#about-align-scoliosis + p {
+  display: inline;
+}
+
 .navbar {
   padding: 0;
 }
 
 .certs {
   color: #8CCCBA ;
-  /* font-size: smaller; */
+}
+
+.about .certs {
+  color: #6CB5A0;
 }
 
 .logo {
@@ -57,9 +74,6 @@ body {
 }
 
 .testimonial {
-  /* margin-right: 4rem; */
-  /* margin-left: 4rem; */
-  /* max-width: 550px; */
   text-align: center;
   font-size: larger;
 }
@@ -80,18 +94,57 @@ body {
   margin-bottom: 0;
 }
 
+.schroth p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.about p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.services p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.services li {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 .btn {
   background: #8CCCBA;
   border: none;
 }
 
 .btn:hover {
-  background:#108e6a;
+  background:#6CB5A0;
+}
+
+a {
+  color: #6CB5A0;
+}
+
+a:hover {
+  color:#6CB5A0;
 }
 
 .blrub {
   height: 5rem;
   color: #292F36;
+}
+
+
+.test-1 {
+  border-right: 1px solid rgb(0,0,0,.1);
 }
 
 .carousel-caption p {
@@ -110,7 +163,7 @@ body {
 }
 
 strong {
-  color: #8CCCBA ;
+  color: #6CB5A0 ;
 }
 
 .contact-link {
@@ -145,7 +198,7 @@ i {
 
 h2 {
   font-weight: 300;
-   color: #8CCCBA ;
+  color: #69AF9C ;
 }
 
 .services h1 {
@@ -158,7 +211,7 @@ h2 {
 
 h1 {
   font-weight: 300;
-  color: #8CCCBA;
+  color: #6CB5A0;
   text-align: center;
 }
 
@@ -180,10 +233,10 @@ h1 {
   margin: 15px;
 }
 
-.testimonial-pictures-blurb {
+p.testimonial-pictures-blurb {
   margin-bottom: 0;
   text-align: center;
-  font-size: 0.95em;
+  font-size: 0.85em;
 }
 
 .carousel-testimonial {
@@ -256,6 +309,22 @@ h1 {
 .navbar-toggler-icon {
   color: #8CCCBA ;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(144, 204, 191)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.carousel-caption {
+  left: 15%;
+  right: 15%;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.carousel-caption h2 {
+  font-size: 1.4rem;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
 }
 
 @media (max-width: 575px) {
@@ -380,13 +449,19 @@ h1 {
     line-height: 1.4;
   }
 
+  .carousel-caption h2 {
+    font-size: 2.0rem;
+  }
+
   .featurette-heading {
     font-size: 50px;
   }
-}
 
-/* @media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+  .carousel-caption {
+    left: 22%;
+    right: 22%;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
-} */
+}

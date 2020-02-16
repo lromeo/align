@@ -25,7 +25,8 @@ app.get("/schroth", function(req, res){
 })
 
 app.get("/contact", function(req, res){
-  res.render("contact")
+  google_api = "https://maps.googleapis.com/maps/api/js?key=" + process.env.GOOGLE_MAPS_API_KEY + "&callback=initMap"
+  res.render("contact", { google_api })
 })
 
 app.get("/testimonials", function(req, res){
@@ -39,8 +40,6 @@ app.get("/services", function(req, res){
 const GMAIL_USER = process.env.GMAIL_USER
 const GMAIL_PASS = process.env.GMAIL_PASS
 const EMAIL_RECIPIENT = process.env.EMAIL_RECIPIENT
-
-console.log("GMAIL_USER", GMAIL_USER)
 
 app.post('/contact', (req, res) => {
   const smtpTrans = nodemailer.createTransport({
@@ -57,7 +56,7 @@ app.post('/contact', (req, res) => {
     from: 'Your sender info here',
     to: EMAIL_RECIPIENT,
     subject: 'New message from Align Scoliosis',
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    text: `${req.body.name} (${req.body.email} - ${req.body.phone}) says: ${req.body.message}`
   }
 
   smtpTrans.sendMail(mailOpts, (error, response) => {
