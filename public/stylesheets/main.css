@@ -9,6 +9,7 @@ body {
 
 #map {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   height: 400px;
 }
 
@@ -49,7 +50,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.logo-line-1 {
+h1.logo-line-1 {
   font-family: 'Raleway', sans-serif;
   margin-bottom: 0;
   font-size: 3.25em;
@@ -196,9 +197,19 @@ i {
   color: #8CCCBA ;
 }
 
+
 h2 {
   font-weight: 300;
-  color: #69AF9C ;
+  color: #69AF9C;
+}
+
+.home .schedule h1 {
+  color: #8CCCBA;
+  margin-bottom: 1rem;
+}
+
+.footer .col hr {
+  margin-top: 0;
 }
 
 .services h1 {
