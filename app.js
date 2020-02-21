@@ -2,8 +2,12 @@ var express = require("express")
 var app = express()
 const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser')
+var sslRedirect = require('heroku-ssl-redirect');
+
 
 app.use(bodyParser.urlencoded({extended: true}))
+
+app.use(sslRedirect());
 
 if (process.env.NODE_ENV !== 'production') {
   require("dotenv").config();
