@@ -13,8 +13,19 @@
     <body>
         <header>
             <%- include('partials/header.ejs') %>
+            <div class="covid">
+                <div class="col">
+                    <p><i>COVID-19 Update:</i> The office is currently open and we are taking precautions to ensure patient and employee safety.</p>
+                    <ul>
+                        <li>All equipment and surfaces are thoroughly sanitized in between patients</li>
+                        <li>All patients are screened before appointments and are required to wear a mask at all times</li>
+                        <li>Except in the case of minors, we ask that no one accompany you to your appointment</li>
+                        <li>Since we are a 1:1 practice there is never more than 1 patient and 1 therapist in the room at a time</li>
+                        <li>We are now offering <a href="/telehealth">Telehealth sessions</a> - rehab from home</li>
+                    </ul>
+                </div>
+            </div>
         </header>
-
         <main role="main">
             <div class="container home">
                 <div class="logo logo-header">
@@ -23,14 +34,22 @@
                 </div>
 
                 <div class="row">
-                    <div id="myCarousel" class="carousel slide container lazy" data-ride="carousel">
+                    <div id="myCarousel" class="carousel slide container lazy carousel-fade" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
+                                <img class="d-block w-100" src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/telehealth.jpg" alt="telehealth">
+                                <div class="carousel-caption">
+                                    <h2>Now offering telehealth sessions</h2>
+                                    <p><a class="btn btn-primary" href="/telehealth" role="button">Learn more</a></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
                                 <img class="d-block w-100" src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/bars_with_hands.jpg" alt="hangs hanging from Schroth bars">
                                 <div class="carousel-caption">
                                     <h2>The Schroth Method</h2>
@@ -66,36 +85,30 @@
 
                 <div class="row marketing">
                     <div class="col-lg-4">
-                        <a href="/services">
-                            <span class="fa-stack fa-4x">
-                                <i class="far fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-stack-1x">1:1</i>
-                            </span>
-                        </a>
+                        <span class="fa-stack fa-4x">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-stack-1x">1:1</i>
+                        </span>
                         <h2 class=blurb-title>Focused</h2>
                         <p class="blrub">
                             All treatments are one on one with a Physical Therapist so all the focus is on you.
                         </p>
                     </div>
                     <div class="col-lg-4 ">
-                        <a href="/schroth">
-                            <span class="fa-stack fa-4x">
-                                <i class="far fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-check"></i>
-                            </span>
-                        </a>
+                        <span class="fa-stack fa-4x">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-check"></i>
+                        </span>
                         <h2 class=blurb-title>Proven</h2>
                         <p class="blrub">
                             We place a high value on Evidence Based Medicine. Read the science behind the method.
                         </p>
                     </div>
                     <div class="col-lg-4">
-                        <a href="/contact">
-                            <span class="fa-stack fa-4x">
-                                <i class="far fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-hands"></i>
-                            </span>
-                        </a>
+                        <span class="fa-stack fa-4x">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-hands"></i>
+                        </span>
                         <h2 class=blurb-title>Care</h2>
                         <p class="blrub">
                             Individual care plans tailored to your specific goals and schedule. Evening and weekend appointments available.
@@ -118,18 +131,18 @@
                 <hr class="featurette-divider">
 
                 <div class="row featurette">
-                    <div class="col-md-9">
+                    <div class="col-lg-9">
                         <h5 class="featurette-heading">Dr. Kristin Romeo, <span class="certs">PT, DPT, OCS</span></h5>
                         <p class="lead">
                             Dr. Kristin is the founder of Align Scoliosis Physical Therapy. She received her Doctorate in Physical Therapy from The Graduate Center, CUNY. She is certified at the advanced C2 level in providing the Schroth Method for the treatment of scoliosis and kyphosis. She recently earned the distinction of Orthopedic Certified Specialist through the American Physical Therapy Association.
                         </p>
                         <div class="row justify-content-end">
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
                                 <p class="text-center"><a class="btn btn-primary" href="/about" role="button">Learn More About Us</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 justify-content-center d-flex d-lg-inline">
                         <img class="featurette-image img-fluid mx-auto" src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/kristin.jpg" alt="kristin romeo">
                     </div>
                 </div>

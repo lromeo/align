@@ -1,5 +1,5 @@
 body {
-  padding-top: 6rem;
+  padding-top: 4.4rem;
   padding-bottom: 3rem;
 }
 
@@ -43,6 +43,10 @@ body {
 }
 
 .logo-header {
+  margin-bottom: 2rem;
+}
+
+header {
   margin-bottom: 2rem;
 }
 
@@ -91,13 +95,18 @@ h1.logo-line-1 {
   margin-bottom: 0;
 }
 
-.schroth p {
+.container p, .container li {
   font-size: 1.1rem;
   font-weight: 300;
 }
 
+.footer p {
+  font-size: 1.0rem;
+  font-weight: 300;
+}
+
 .about p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 300;
   text-align: justify;
 }
@@ -171,9 +180,8 @@ p {
   color: #292F36;
 }
 
-
 .theme-color-text {
-  color: #8CCCBA ;
+  color: #6CB5A0 ;
 }
 
 .theme-color-light {
@@ -184,8 +192,12 @@ i.far {
   color: #8CCCBA ;
 }
 
-i {
+i.fas {
   color: #8CCCBA ;
+}
+
+i {
+  color: #6CB5A0 ;
 }
 
 .blurb-title {
@@ -194,6 +206,21 @@ i {
 
 
 h2 {
+  font-weight: 300;
+  color: #69AF9C;
+}
+
+h3 {
+  font-weight: 300;
+  color: #69AF9C;
+}
+
+h4 {
+  font-weight: 300;
+  color: #69AF9C;
+}
+
+h5 {
   font-weight: 300;
   color: #69AF9C;
 }
@@ -207,18 +234,15 @@ h2 {
   margin-top: 0;
 }
 
-.services h1 {
-  font-size: 2rem;
-}
-
-.services h2 {
-  font-size: 1.45rem;
-}
-
 h1 {
   font-weight: 300;
   color: #6CB5A0;
   text-align: center;
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .schroth-row {
@@ -278,6 +302,20 @@ p.testimonial-pictures-blurb {
   border-radius: .25rem;
   margin: 0 0.25em;
 }
+
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+  color: #8CCCBA ;
+}
+
+.nav-link i {
+  color: #787b7f;
+}
+
+.nav-link:hover i {
+  color: #8CCCBA;
+}
+
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
   color: #8CCCBA ;
@@ -354,6 +392,7 @@ p.testimonial-pictures-blurb {
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
     color: #8CCCBA ;
+    background: none;
   }
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #8CCCBA ;
@@ -372,6 +411,12 @@ p.testimonial-pictures-blurb {
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
     color: #8CCCBA ;
     background-color: #060505;
+  }
+  .ortho .col-lg-4 {
+    padding-bottom: 3rem;
+  }
+  .featurette-image {
+    width: 50%;
   }
 }
 
@@ -401,20 +446,20 @@ p.testimonial-pictures-blurb {
   background-color: #060505;
 }
 
-
 .carousel {
   margin-bottom: 4rem;
 }
 .carousel-caption {
   bottom: 2rem;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.3)
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.carousel-item {
+.home .carousel-item {
   background-color: #777;
+  border-radius: 35px;
+  overflow: hidden;
 }
-
 
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -464,4 +509,65 @@ p.testimonial-pictures-blurb {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+}
+
+ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+.dropdown-item:hover {
+  background: none;
+}
+
+.covid {
+  background-color: rgba(0, 0, 0, 0.125);
+  padding-bottom: 0.1rem;
+  box-shadow: 0 10px 10px rgba(0,0,0,.05);
+}
+
+.covid p, .covid i {
+  padding-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  color: #2b2f33;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.covid ul {
+  color: #2b2f33;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.covid a {
+  font-weight: 500;
+  color: #292F36;
+}
+
+.services li {
+  margin-bottom: 0.5rem;
+}
+
+.navbar button {
+  border: none;
+}
+
+.navbar .navbar-nav .dropdown a.nav-link {
+  display: inline-block;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.navbar .navbar-nav .dropdown button {
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navbar .navbar-nav .dropdown i.fas {
+  color: #787b7f;
 }

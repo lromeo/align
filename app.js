@@ -24,10 +24,6 @@ app.get("/about", function(req, res){
   res.render("about")
 })
 
-app.get("/schroth", function(req, res){
-  res.render("schroth")
-})
-
 app.get("/contact", function(req, res){
   google_api = "https://maps.googleapis.com/maps/api/js?key=" + process.env.GOOGLE_MAPS_API_KEY + "&callback=initMap"
   res.render("contact", { google_api })
@@ -39,6 +35,31 @@ app.get("/testimonials", function(req, res){
 
 app.get("/services", function(req, res){
   res.render("services")
+})
+
+app.get("/schroth", function(req, res){
+  res.render("schroth")
+})
+
+app.get("/orthopedics", function(req, res){
+  res.render("orthopedics")
+})
+
+app.get("/telehealth", function(req, res){
+  res.render("telehealth")
+})
+
+
+app.get("/pediatrics", function(req, res){
+  res.render("pediatrics")
+})
+
+app.get("/accelerated", function(req, res){
+  res.render("accelerated")
+})
+
+app.get("/faq", function(req, res){
+  res.render("faq")
 })
 
 AWS.config.update({region: 'us-west-2'});

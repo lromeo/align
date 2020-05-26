@@ -8,24 +8,47 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                    <a class="nav-link" href="/about">About Us</a>
+                <a class="nav-link" href="/about">About Us</a>
             </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="/services">Our Services</a>
+                <button onclick="myFunction()"><i class="fas fa-caret-down"></i></button>
+
+                <ul class="dropdown-menu" id="dropdown-menu" >
+                    <li><a class="nav-link dropdown-item" href="/schroth">Schroth Method</a></li>
+                    <li><a class="nav-link dropdown-item" href="/orthopedics">Orthopedics</a></li>
+                    <li><a class="nav-link dropdown-item" href="/pediatrics">Pediatrics</a></li>
+                    <li><a class="nav-link dropdown-item" href="/telehealth">Telehealth</a></li>
+                    <li><a class="nav-link dropdown-item" href="/accelerated">Accelerated Schroth Program</a></li>
+                </ul>
+            </li>
+
             <li class="nav-item">
-                    <a class="nav-link" href="/schroth">The Schroth Method</a>
+                 <a class="nav-link" href="/testimonials">Testimonials</a>
             </li>
-            <li class="nav-item">
-                    <a class="nav-link" href="/services">Our Services</a>
-            </li>
-            <li class="nav-item">
-                    <a class="nav-link" href="/testimonials">Testimonials</a>
-            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="https://app.acuityscheduling.com/schedule.php?owner=19114060" target="_blank">Schedule an Appointment</a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="/contact">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/faq">FAQ</a>
             </li>
         </ul>
     </div>
 </nav>
 
+<script>
+    function myFunction() {
+        if(document.getElementById("dropdown-menu").style.display === "block") {
+            document.getElementById("dropdown-menu").style.display = "none";
+        } else {
+            document.getElementById("dropdown-menu").style.display = "block";
+        }
+    }
+</script>
