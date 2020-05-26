@@ -566,6 +566,7 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
   display: inline-block;
   margin-left: 0;
   padding-left: 0;
+  background-color: #f4f4f4;
 }
 
 .navbar .navbar-nav .dropdown i.fas {
