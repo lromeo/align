@@ -26,6 +26,6 @@
     "ejs-lint": "^1.0.1",
     "express": "^4.17.1",
     "heroku-ssl-redirect": "0.0.4",
-    "nodemailer": "^6.4.2"
+    "nodemailer": "^6.4.16"
   }
 }
