@@ -13,16 +13,12 @@
     <body>
         <header>
             <%- include('partials/header.ejs') %>
-            <div class="covid">
+            <div class="banner  ">
                 <div class="col">
-                    <p><i>COVID-19 Update:</i> The office is currently open and we are taking precautions to ensure patient and employee safety.</p>
-                    <ul>
-                        <li>All equipment and surfaces are thoroughly sanitized in between patients</li>
-                        <li>All patients are screened before appointments and are required to wear a mask at all times</li>
-                        <li>Except in the case of minors, we ask that no one accompany you to your appointment</li>
-                        <li>Since we are a 1:1 practice there is never more than 1 patient and 1 therapist in the room at a time</li>
-                        <li>We are now offering <a href="/telehealth">Telehealth sessions</a> - rehab from home</li>
-                    </ul>
+                    <h3>We are moving!</h3>
+                    <p>Our office in Hoboken is closing as my family and I are moving back to Long Island.</p>
+                    <p>Our new office will open in <b>Stony Brook, NY</b> starting this September.</p>
+                    <p>Until then we will not be accepting new patients. Existing patients can still book telehealth sessions.</p>
                 </div>
             </div>
         </header>
@@ -39,36 +35,20 @@
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <!-- <li data-target="#myCarousel" data-slide-to="3"></li> -->
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/telehealth.jpg" alt="telehealth">
-                                <div class="carousel-caption">
-                                    <h2>Now offering telehealth sessions</h2>
-                                    <p><a class="btn btn-primary" href="/telehealth" role="button">Learn more</a></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
                                 <img class="d-block w-100" src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/bars_with_hands.jpg" alt="hangs hanging from Schroth bars">
-                                <div class="carousel-caption">
-                                    <h2>The Schroth Method</h2>
-                                    <p>Scoliosis specific physical therapy</p>
-                                    <p><a class="btn btn-primary" href="/schroth" role="button">Learn more</a></p>
-                                </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" data-src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/spring.jpg" alt="pilates physical therapy using spring board">
-                                <div class="carousel-caption">
-                                    <h2>Orthopedic physical therapy</h2>
-                                    <p>Build strength through pilates based exercises</p>
-                                </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" data-src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/hoboken.jpg" alt="hoboken waterfront">
+                                <img class="d-block w-100" src="https://align-scoliosis.s3.us-east-2.amazonaws.com/images/telehealth.jpg" alt="telehealth">
                                 <div class="carousel-caption">
-                                    <h2>Based out of Hoboken, NJ</h2>
-                                    <p>Serving the greater NYC, Jersey City, and Hoboken communities</p>
+                                    <h2>Offering telehealth sessions</h2>
+                                    <p><a class="btn btn-primary" href="/telehealth" role="button">Learn more</a></p>
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -85,27 +65,27 @@
 
                 <div class="row marketing">
                     <div class="col-lg-4">
-                        <span class="fa-stack fa-4x">
+                        <span class="fa-stack fa-3x">
                             <i class="far fa-circle fa-stack-2x"></i>
                             <i class="fas fa-stack-1x">1:1</i>
                         </span>
                         <h2 class=blurb-title>Focused</h2>
                         <p class="blrub">
-                            All treatments are one on one with a Physical Therapist so all the focus is on you.
+                            All treatments are <strong>one on one</strong> with a Physical Therapist so all the focus is on you.
                         </p>
                     </div>
                     <div class="col-lg-4 ">
-                        <span class="fa-stack fa-4x">
+                        <span class="fa-stack fa-3x">
                             <i class="far fa-circle fa-stack-2x"></i>
                             <i class="fas fa-check"></i>
                         </span>
                         <h2 class=blurb-title>Proven</h2>
                         <p class="blrub">
-                            We place a high value on Evidence Based Medicine. Read the science behind the method.
+                            We place a high value on Evidence Based Medicine. Read the science behind the <a href="/schroth">Schroth Method</a>.
                         </p>
                     </div>
                     <div class="col-lg-4">
-                        <span class="fa-stack fa-4x">
+                        <span class="fa-stack fa-3x">
                             <i class="far fa-circle fa-stack-2x"></i>
                             <i class="fas fa-hands"></i>
                         </span>
@@ -156,9 +136,7 @@
         <%- include('partials/footer.ejs') %>
         <script>
             $(function() {
-                console.log('foo')
                 return $(".carousel.lazy").on("slide.bs.carousel", function(ev) {
-                    console.log('bar')
                     var lazy;
                     lazy = $(ev.relatedTarget).find("img[data-src]");
                     lazy.attr("src", lazy.data('src'));

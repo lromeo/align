@@ -58,7 +58,7 @@ h1.logo-line-1 {
 }
 
 .logo-line-2 {
-  font-family: 'Spinnaker', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
   color: #8CCCBA ;
 }
@@ -277,8 +277,13 @@ p.testimonial-pictures-blurb {
   margin-bottom: 2rem;
 }
 
+nav {
+  box-shadow: 0 10px 10px rgba(0,0,0,.05);
+}
+
 .navbar {
-  background-color: #f4f4f4;
+  background-color: white;
+  align-items: center;
 }
 .navbar .navbar-brand {
   color: #292f36;
@@ -298,9 +303,14 @@ p.testimonial-pictures-blurb {
   color: #8CCCBA ;
 }
 .navbar .navbar-nav .nav-link {
-  color: #787b7f;
+  color: #292F36;
   border-radius: .25rem;
   margin: 0 0.25em;
+  font-weight: 300;
+}
+
+ul.navbar-nav {
+  align-items: center;
 }
 
 .navbar .navbar-text a:hover,
@@ -447,7 +457,7 @@ p.testimonial-pictures-blurb {
 }
 
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .carousel-caption {
   bottom: 2rem;
@@ -523,13 +533,11 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
   background: none;
 }
 
-.covid {
+.banner {
   background-color: rgba(0, 0, 0, 0.125);
   padding-bottom: 0.1rem;
   box-shadow: 0 10px 10px rgba(0,0,0,.05);
-}
-
-.covid p, .covid i {
+  text-align: center;
   padding-top: 0.2rem;
   margin-bottom: 0.5rem;
   color: #2b2f33;
@@ -537,13 +545,8 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
   font-weight: 300;
 }
 
-.covid ul {
-  color: #2b2f33;
-  font-size: 0.9rem;
-  font-weight: 300;
-}
 
-.covid a {
+.banner b {
   font-weight: 500;
   color: #292F36;
 }
@@ -558,8 +561,6 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 
 .navbar .navbar-nav .dropdown a.nav-link {
   display: inline-block;
-  margin-right: 0;
-  padding-right: 0;
 }
 
 .navbar .navbar-nav .dropdown button {
@@ -571,4 +572,12 @@ ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
 
 .navbar .navbar-nav .dropdown i.fas {
   color: #787b7f;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+p.large  {
+  font-size: 1.33rem;
 }

@@ -33,29 +33,16 @@ app.get("/testimonials", function(req, res){
   res.render("testimonials")
 })
 
-app.get("/services", function(req, res){
-  res.render("services")
-})
-
 app.get("/schroth", function(req, res){
   res.render("schroth")
 })
 
-app.get("/orthopedics", function(req, res){
-  res.render("orthopedics")
-})
-
-app.get("/telehealth", function(req, res){
-  res.render("telehealth")
-})
-
-
-app.get("/pediatrics", function(req, res){
-  res.render("pediatrics")
-})
-
 app.get("/accelerated", function(req, res){
   res.render("accelerated")
+})
+
+app.get("/standard", function(req, res){
+  res.render("standard")
 })
 
 app.get("/faq", function(req, res){
